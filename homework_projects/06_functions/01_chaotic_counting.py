@@ -1,16 +1,19 @@
 import random
 
 def chaotic_counting():
-    """Counts from 1 to 10 but may stop early with a 30% chance at each step."""
-    DONE_LIKELIHOOD = 0.3  # 30% chance to stop
+   
+    DONE_LIKELIHOOD = 0.3 
+
     print("I'm going to count until 10 or until I feel like stopping, whichever comes first.")
     
-    for num in range(1, 11):  # Loop from 1 to 10
-        if random.random() < DONE_LIKELIHOOD:  # 30% chance to stop early
-            break  # Stop the loop immediately
+    for num in range(1, 11): 
+
+        if random.random() < DONE_LIKELIHOOD:  
+
+            break 
+
         print(num)
     
     print("I'm done.")
 
-# Run the function
 chaotic_counting()

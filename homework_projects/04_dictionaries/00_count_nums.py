@@ -39,6 +39,8 @@ def print_counts(num_dict):
 
 
     user_numbers = get_user_numbers()
+   
     num_dict = count_nums(user_numbers)
+   
     print_counts(num_dict)
 

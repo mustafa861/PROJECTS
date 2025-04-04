@@ -1,26 +1,31 @@
-def count_even():
-    """Prompts the user for integers and counts the number of even numbers in the list."""
-    num_list = []  # Create an empty list
-    count = 0  # Initialize even number count
 
-    while True:  # Loop to get user input until they stop
+def count_even():
+   
+    num_list = [] 
+    
+    count = 0  
+    
+    while True:  
+    
         user_input = input("Enter an integer (or press Enter to stop): ")
 
-        if user_input == "":  # If the user presses Enter, stop taking input
+        if user_input == "":  
+
             break
         
         try:
-            number = int(user_input)  # Convert input to integer
-            num_list.append(number)  # Add number to list
+            number = int(user_input)  
+
+            num_list.append(number) 
             
-            if number % 2 == 0:  # Check if the number is even
-                count += 1  # Increment count of even numbers
+            if number % 2 == 0:  
+
+                count += 1  
                 
-        except ValueError:  # Handle non-integer inputs
+        except ValueError: 
+
             print("Please enter a valid integer.")
     
     print(f"Number of even numbers entered: {count}")
 
-# Run the function
-if __name__ == '__main__':
-    count_even()
+count_even()
